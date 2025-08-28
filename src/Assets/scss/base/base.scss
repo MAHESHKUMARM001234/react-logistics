@@ -1,0 +1,26 @@
+$primary-color: #ff0a0a;
+$light-color: #ffffff;
+$dark-color: #333333;
+$font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+}
+
+
+@mixin button-theme($color) {
+    font-size: 12px;
+    // font-weight: 800;
+    text-decoration: none;
+    color: $light-color;
+    font-weight: 600;
+    padding: 15px 35px;
+    background-color: $color;
+}

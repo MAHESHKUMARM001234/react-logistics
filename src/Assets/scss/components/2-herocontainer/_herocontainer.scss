@@ -1,0 +1,44 @@
+@use '../../base/base.scss';
+
+.herocontainer{
+    background-image: url('../../../images/ship.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-section{
+    height: 89.5vh;
+    padding-top: 150px;
+    padding-left: 150px;
+    background-color: rgba(0, 0, 0, 0.60);
+    
+
+
+    .hero-title{
+        font-size: 12px;
+        color: base.$primary-color;
+        font-weight: 600;
+    }
+    .hero-heading{
+        font-size: 45px;
+        color: base.$light-color;
+        span{
+            color: base.$primary-color;
+        }
+    }
+    .hero-description{
+        padding-top: 15px;
+        padding-bottom: 35px;
+        font-size: 12px;
+        color: base.$light-color;
+        font-weight: 600;
+    }
+    .Read-more{
+        @include base.button-theme($color: base.$primary-color);    
+    }
+    .Get-quote{
+        @include base.button-theme($color: base.$dark-color);
+        margin-left: 20px;
+    }
+}
